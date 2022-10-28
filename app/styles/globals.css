@@ -1,0 +1,120 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+@font-face {
+	font-family: 'Cormorand Garamond';
+	src: url('/asset/CormorantGaramond/woff2/CORMORANTGARAMOND-MEDIUM.woff2') format('woff2');
+	font-weight: 500;
+	font-display: block;
+}
+@font-face {
+	font-family: 'Cormorand Garamond';
+	src: url('/asset/CormorantGaramond/woff2/CORMORANTGARAMOND-LIGHT.woff2') format('woff2');
+	font-weight: 200;
+	font-display: block;
+}
+@font-face {
+	font-family: 'Cormorand Garamond';
+	src: url('/asset/CormorantGaramond/woff2/CORMORANTGARAMOND-REGULAR.woff2') format('woff2');
+	font-weight: 400;
+	font-display: block;
+}
+@font-face {
+	font-family: 'Cormorand Garamond';
+	src: url('/asset/CormorantGaramond/woff2/CORMORANTGARAMOND-SEMIBOLD.woff2') format('woff2');
+	font-weight: 600;
+	font-display: block;
+}
+@font-face {
+	font-family: 'Cormorand Garamond';
+	src: url('/asset/CormorantGaramond/woff2/CORMORANTGARAMOND-BOLD.woff2') format('woff2');
+	font-weight: 700;
+	font-display: block;
+}
+@font-face {
+	font-family: 'Fleur de Leah';
+	src: url('/asset/FleurDeLeah/woff2/FLEURDELEAH-REGULAR.woff2') format('woff2');
+	font-display: block;
+}
+
+@font-face {
+	font-family: 'Open Sans';
+	src: url('/asset/OpenSans/woff2/OpenSans-SemiBold.woff2') format('woff2');
+	font-display: block;
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+	line-height: 1;
+	font-family: "Cormorand Garamond";
+	font-weight: 500;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+	font-family: "Cormorand Garamond";
+	font-weight: 500;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+textarea {
+	min-height: 150px;
+	resize: none;
+}
+
+/* width */
+::-webkit-scrollbar {
+	width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+	background: #f1f1f1;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+	background: #DA7474;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+	background: #9EC2A1;
+  }
+
