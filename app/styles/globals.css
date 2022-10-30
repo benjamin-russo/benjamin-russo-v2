@@ -4,44 +4,38 @@
 */
 
 @font-face {
-	font-family: 'Cormorand Garamond';
-	src: url('/asset/CormorantGaramond/woff2/CORMORANTGARAMOND-MEDIUM.woff2') format('woff2');
-	font-weight: 500;
-	font-display: block;
-}
-@font-face {
-	font-family: 'Cormorand Garamond';
-	src: url('/asset/CormorantGaramond/woff2/CORMORANTGARAMOND-LIGHT.woff2') format('woff2');
-	font-weight: 200;
-	font-display: block;
-}
-@font-face {
-	font-family: 'Cormorand Garamond';
-	src: url('/asset/CormorantGaramond/woff2/CORMORANTGARAMOND-REGULAR.woff2') format('woff2');
+	font-family: 'Poppins';
+	src: url('/asset/Poppins/Poppins-Regular.woff') format('woff');
 	font-weight: 400;
 	font-display: block;
 }
 @font-face {
-	font-family: 'Cormorand Garamond';
-	src: url('/asset/CormorantGaramond/woff2/CORMORANTGARAMOND-SEMIBOLD.woff2') format('woff2');
+	font-family: 'Poppins';
+	src: url('/asset/Poppins/Poppins-Medium.woff') format('woff');
+	font-weight: 500;
+	font-display: block;
+}
+@font-face {
+	font-family: 'Poppins';
+	src: url('/asset/Poppins/Poppins-SemiBold.woff') format('woff');
 	font-weight: 600;
 	font-display: block;
 }
 @font-face {
-	font-family: 'Cormorand Garamond';
-	src: url('/asset/CormorantGaramond/woff2/CORMORANTGARAMOND-BOLD.woff2') format('woff2');
+	font-family: 'Poppins';
+	src: url('/asset/Poppins/Poppins-Bold.woff') format('woff');
 	font-weight: 700;
 	font-display: block;
 }
 @font-face {
-	font-family: 'Fleur de Leah';
-	src: url('/asset/FleurDeLeah/woff2/FLEURDELEAH-REGULAR.woff2') format('woff2');
+	font-family: 'Poppins';
+	src: url('/asset/Poppins/Poppins-ExtraBold.woff') format('woff');
+	font-weight: 800;
 	font-display: block;
 }
-
 @font-face {
-	font-family: 'Open Sans';
-	src: url('/asset/OpenSans/woff2/OpenSans-SemiBold.woff2') format('woff2');
+	font-family: 'Volkorn';
+	src: url('/asset/Volkorn/Volkorn-Regular.woff') format('woff');
 	font-display: block;
 }
 
@@ -65,8 +59,9 @@ time, mark, audio, video {
 	font: inherit;
 	vertical-align: baseline;
 	line-height: 1;
-	font-family: "Cormorand Garamond";
-	font-weight: 500;
+	font-family: "Poppins", 'sans-serif';
+	font-weight: 400;
+	transition: all 0.2s ease;
 }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 

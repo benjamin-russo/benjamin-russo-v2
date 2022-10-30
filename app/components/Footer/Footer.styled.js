@@ -2,6 +2,7 @@ import styled from 'styled-components';
 import pxToRem from '../../utils/pxToRem';
 
 import Logo from '../../images/logos/black-logo.svg';
+import breakpoints from '../../constants/breakpoints';
 
 export const StyledFooter = styled.footer`
   gap: ${pxToRem(10)};
@@ -24,7 +25,16 @@ export const Text = styled.p`
   font-size: ${({ theme }) => theme.fontSize.pM};
 `;
 
-export const NavLink = styled.a``;
+export const NavLink = styled.a`
+  &:hover {
+    transform: scale(1.2);
+  }
+  @media ${breakpoints.laptop} {
+    &:hover {
+      transform: initial;
+    }
+  }
+`;
 
 export const Copyright = styled.p``;
 

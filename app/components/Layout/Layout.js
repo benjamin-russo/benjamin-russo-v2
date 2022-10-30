@@ -14,23 +14,14 @@ const StyledLayout = styled.div`
   min-height: 100vh;
 `;
 
-const MainContainer = styled.main`
-  position: relative;
-  padding-top: ${pxToRem(130.15)};
-  @media ${breakpoints.laptopL} {
-    padding-top: ${pxToRem(190.61)};
-  }
-  @media ${breakpoints.laptop} {
-    padding-top: ${pxToRem(100.15)};
-  }
-`;
+const MainContainer = styled.main``;
 
 const Layout = ({ children }) => {
   const scrollDirection = useScrollDirection();
   return (
     <StyledLayout>
       <Header display={scrollDirection} />
-      <MainContainer>{children}</MainContainer>
+      {children}
       <Footer />
     </StyledLayout>
   );

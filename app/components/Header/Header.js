@@ -62,7 +62,7 @@ const Header = (props) => {
     const Icon = socialMedia.icon;
     return (
       <Link id={socialMedia.title} href={socialMedia.path} passHref>
-        <NavLink>
+        <NavLink icon>
           <Icon />
         </NavLink>
       </Link>

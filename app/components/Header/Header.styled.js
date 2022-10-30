@@ -7,7 +7,6 @@ import CloseIcon from '../../images/icons/close.svg';
 
 export const StyledHeader = styled.header`
   z-index: 100;
-  position: relative;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -32,7 +31,7 @@ export const Navbar = styled.nav`
     justify-content: flex-start;
     align-items: center;
     flex-direction: column;
-    margin-top: ${pxToRem(200)};
+    padding-top: ${pxToRem(200)};
     background-color: ${({ theme }) => theme.colors.black80};
   }
 `;
@@ -69,21 +68,36 @@ export const NavItem = styled.div`
   flex-direction: column;
 `;
 
-export const LogoLink = styled.a``;
+export const LogoLink = styled.a`
+  &:hover {
+    transform: scale(1.2);
+  }
+  @media ${breakpoints.laptop} {
+    &:hover {
+      transform: initial;
+    }
+  }
+`;
 
 export const NavLink = styled.a`
   color: ${({ theme }) => theme.colors.white};
   font-size: ${({ theme }) => theme.fontSize.pM};
   text-decoration: none;
   transition: all 0.2s ease;
-  &:hover {
+  &:hover,
+  &:focus {
     color: ${({ theme }) => theme.colors.secondary};
+    transform: ${({ icon }) => (icon ? 'scale(1.2)' : 'initial')};
+    text-shadow: ${({ theme }) => theme.textShadow.primary};
   }
   @media ${breakpoints.laptop} {
     font-size: ${({ theme }) => theme.fontSize.pL};
     svg {
       width: ${pxToRem(40)};
       height: ${pxToRem(40)};
+    }
+    &:hover {
+      transform: initial;
     }
   }
 `;
