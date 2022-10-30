@@ -7,6 +7,9 @@ import Header from '../Header/Header';
 import Footer from '../Footer/Footer';
 
 const StyledLayout = styled.div`
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
   background-color: ${({ theme }) => theme.colors.primary};
   min-height: 100vh;
 `;

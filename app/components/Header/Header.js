@@ -3,7 +3,7 @@ import Link from 'next/link';
 
 import Logo from '../../images/logos/white-logo.svg';
 import InstagramIcon from '../../images/icons/instagram.svg';
-import TwitterIcon from '../../images/icons/twitter.svg';
+import LinkedinIcon from '../../images/icons/linkedin.svg';
 import {
   Dot,
   LogoLink,
@@ -40,9 +40,9 @@ const SocialMediasEnum = [
     path: '/instagram',
   },
   {
-    title: 'Twitter',
-    icon: TwitterIcon,
-    path: '/twitter',
+    title: 'Linkedin',
+    icon: LinkedinIcon,
+    path: '/linkedin',
   },
 ];
 
