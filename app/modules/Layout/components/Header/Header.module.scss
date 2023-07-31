@@ -1,0 +1,55 @@
+@import '/styles/variables.scss';
+
+.Header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 50px;
+}
+
+.Header-nav {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+
+.Header-li {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  height: fit-content;
+}
+
+.Header-socials {
+  display: flex;
+  gap: 20px;
+}
+
+.Header-link,
+.Header-iconlink {
+  display: flex;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: normal;
+  text-decoration: none;
+  color: $primary;
+}
+
+.Header-link:hover {
+  color: $primaryLight;
+}
+
+.Header-link--active {
+  color: $primaryLight;
+}
+
+.Header-iconlink:hover {
+  scale: 1.1;
+}
+
+.Header-dot {
+  height: 6px;
+  width: 6px;
+  border-radius: 6px;
+  background-color: $primaryLight;
+}
