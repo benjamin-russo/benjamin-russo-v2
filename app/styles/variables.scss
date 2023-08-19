@@ -1,24 +1,28 @@
-$primary: #243c7f;
-$primaryLight: #1cb4cd;
+$blue1: #002a80;
+$blue2: #0066cc;
+$blue3: #66abff;
+$blueLight: #e7f2ff;
+$yellow: #ffee00;
 
-$success: #247f3d;
-$successLight: #4acd1c;
+$success: #00cc08;
+$successLight: #edffe7;
 
-$error: #7f2424;
-$errorLight: #cd1c1c;
+$error: #cc0000;
+$errorLight: #ffe7e7;
 
 $white: #ffffff;
-$greyLight: #f6f4f5;
 $black: #000000;
 
 :export {
-  primary: $primary;
-  primaryLight: $primaryLight;
+  blue1: $blue1;
+  blue2: $blue2;
+  blue3: $blue3;
+  blueLight: $blueLight;
+  yellow: $yellow;
   success: $success;
   successLight: $successLight;
   error: $error;
   errorLight: $errorLight;
   white: $white;
-  greyLight: $greyLight;
   black: $black;
 }

@@ -1,9 +1,12 @@
 'use client';
 
+import { useState } from 'react';
 import classNames from 'classnames';
 import { usePathname } from 'next/navigation';
 
 import Link from 'next/link';
+import Burger from '@/modules/Common/icons/Burger';
+import Close from '@/modules/Common/icons/Close';
 import Instagram from '@/modules/Common/icons/Instagram';
 import Linkedin from '@/modules/Common/icons/Linkedin';
 import Logo from '@/modules/Common/icons/Logo';
@@ -12,6 +15,7 @@ import { headerLinks } from '../../consts';
 import styles from './Header.module.scss';
 
 const Header = () => {
+  const [isOpen, setIsOpen] = useState(false);
   const pathname = usePathname();
 
   const links = headerLinks.map((link) => {
@@ -36,6 +40,9 @@ const Header = () => {
       <Link className={styles['Header-iconlink']} href='/'>
         <Logo width={40} height={40} />
       </Link>
+      <button className={styles['Header-burger']} onClick={() => setIsOpen(!isOpen)}>
+        {isOpen ? <Burger /> : <Close />}
+      </button>
       <nav>
         <ul className={styles['Header-nav']}>
           {links}

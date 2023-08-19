@@ -7,6 +7,10 @@
   padding: 15px 50px;
 }
 
+.Header-burger {
+  display: none;
+}
+
 .Header-nav {
   display: flex;
   align-items: center;
@@ -32,15 +36,15 @@
   font-weight: 500;
   line-height: normal;
   text-decoration: none;
-  color: $primary;
+  color: $blue2;
 }
 
 .Header-link:hover {
-  color: $primaryLight;
+  color: $blue1;
 }
 
 .Header-link--active {
-  color: $primaryLight;
+  color: $blue1;
 }
 
 .Header-iconlink:hover {
@@ -51,5 +55,5 @@
   height: 6px;
   width: 6px;
   border-radius: 6px;
-  background-color: $primaryLight;
+  background-color: $blue1;
 }

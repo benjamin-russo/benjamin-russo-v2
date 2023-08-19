@@ -1,0 +1,49 @@
+version: '3.8'
+
+services:
+  frontend:
+    build:
+      context: ./app # Le chemin vers le dossier Next.js
+    ports:
+      - '3000:3000'
+    # depends_on:
+    #   - strapi
+    environment:
+      - NEXT_PUBLIC_API_URL=${NEXT_PUBLIC_API_URL}
+      - NODE_ENV=${NODE_ENV}
+    volumes:
+      - ./app:/app # Montez le répertoire local dans le conteneur
+
+  # strapi:
+  #   build:
+  #     context: ./strapi # Le chemin vers le dossier Strapi
+  #   ports:
+  #     - '1337:1337'
+  #   networks:
+  #     - strapi
+  #   environment:
+  #     - DATABASE_HOST=${DATABASE_HOST}
+  #     - DATABASE_PORT=${DATABASE_PORT}
+  #     - DATABASE_NAME=${DATABASE_NAME}
+  #     - DATABASE_USERNAME=${DATABASE_USERNAME}
+  #     - DATABASE_PASSWORD=${DATABASE_PASSWORD}
+  #     - NODE_ENV=${NODE_ENV}
+  #   volumes:
+  #     - ./strapi:/app # Montez le répertoire local dans le conteneur
+  #     - strapi_data:/app/public/uploads
+
+  # mariadb:
+  #   image: mariadb
+  #   environment:
+  #     - MYSQL_ROOT_PASSWORD=${DATABASE_PASSWORD}
+  #     - MYSQL_DATABASE=${DATABASE_NAME}
+  #   volumes:
+  #     - mariadb_data:/var/lib/mysql
+
+networks:
+  strapi:
+    driver: bridge
+
+volumes:
+  strapi_data:
+  mariadb_data:
