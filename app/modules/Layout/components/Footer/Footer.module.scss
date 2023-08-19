@@ -1,0 +1,64 @@
+@import '/styles/variables.scss';
+
+.Footer {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 40px;
+  padding: 80px 20px;
+  background-color: $blue1;
+}
+
+.Footer-top {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.Footer-socials {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.Footer-ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.Footer-text {
+  color: $white;
+}
+
+.Footer-link {
+  display: flex;
+  text-decoration: none;
+  text-align: center;
+  line-height: 1.3;
+  color: $white;
+}
+
+.Footer-bottom {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.Footer-copyright {
+  color: $blue2;
+  line-height: 1.3;
+  text-align: center;
+}
+
+// modifiers
+
+.Footer-link:hover {
+  color: $yellow;
+}

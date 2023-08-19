@@ -105,7 +105,12 @@ nav,
 section {
   display: block;
 }
+html,
 body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 100vh;
   line-height: 1;
 }
 ol,

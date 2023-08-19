@@ -37,10 +37,10 @@ const Header = () => {
 
   return (
     <header className={styles['Header']}>
-      <Link className={styles['Header-iconlink']} href='/'>
+      <Link aria-label='accueil' className={styles['Header-iconlink']} href='/'>
         <Logo width={40} height={40} />
       </Link>
-      <button className={styles['Header-burger']} onClick={() => setIsOpen(!isOpen)}>
+      <button aria-label='menu' className={styles['Header-burger']} onClick={() => setIsOpen(!isOpen)}>
         {isOpen ? <Burger /> : <Close />}
       </button>
       <nav>
@@ -48,12 +48,12 @@ const Header = () => {
           {links}
           <div className={styles['Header-socials']}>
             <li className={styles['Header-li']}>
-              <a className={styles['Header-iconlink']} href='/'>
+              <a aria-label='linkedin' className={styles['Header-iconlink']} href='/'>
                 <Linkedin />
               </a>
             </li>
             <li className={styles['Header-li']}>
-              <a className={styles['Header-iconlink']} href='/'>
+              <a aria-label='instagram' className={styles['Header-iconlink']} href='/'>
                 <Instagram />
               </a>
             </li>

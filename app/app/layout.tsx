@@ -4,6 +4,8 @@ import { Poppins } from 'next/font/google';
 import Header from '@/modules/Layout/components/Header/Header';
 
 import '@/styles/globals.scss';
+import styles from './layout.module.scss';
+import Footer from '@/modules/Layout/components/Footer/Footer';
 
 const poppins = Poppins({ style: ['normal', 'italic'], subsets: ['latin'], weight: ['200', '400', '500', '600', '700'] });
 
@@ -16,10 +18,9 @@ const RootLayout = ({ children }: { children: React.ReactNode }) => {
   return (
     <html lang='fr'>
       <body className={poppins.className}>
-        <main>
-          <Header />
-          {children}
-        </main>
+        <Header />
+        <main>{children}</main>
+        <Footer />
       </body>
     </html>
   );
