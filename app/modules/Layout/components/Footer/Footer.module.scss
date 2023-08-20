@@ -33,14 +33,16 @@
 }
 
 .Footer-text {
+  font-size: 1.6rem;
   color: $white;
 }
 
 .Footer-link {
   display: flex;
+  font-size: 1.6rem;
+  line-height: 1.3;
   text-decoration: none;
   text-align: center;
-  line-height: 1.3;
   color: $white;
 }
 
@@ -53,6 +55,7 @@
 
 .Footer-copyright {
   color: $blue2;
+  font-size: 1.6rem;
   line-height: 1.3;
   text-align: center;
 }

@@ -4,3 +4,9 @@ export enum IconColors {
   white = '#ffffff',
   yellow = '#FFEE00',
 }
+
+export enum ButtonVariants {
+  primary = 'primary',
+  secondary = 'secondary',
+  tertiary = 'tertiary',
+}

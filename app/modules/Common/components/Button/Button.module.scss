@@ -1,0 +1,41 @@
+@import '/styles/variables.scss';
+
+.Button {
+  padding: 12px 20px;
+  border: 2px solid transparent;
+  border-radius: 30px;
+  text-align: center;
+  font-size: 1.6rem;
+  font-weight: 600;
+  text-decoration: none;
+  background-color: $blue1;
+  color: $white;
+}
+
+.Button--secondary {
+  border: 2px solid $yellow;
+  background-color: $yellow;
+  color: $black;
+}
+
+.Button--tertiary {
+  border: 2px solid $blue1;
+  background-color: $white;
+  color: $blue1;
+}
+
+// modifiers
+.Button:hover {
+  border-color: $blue3;
+  -webkit-box-shadow: 0px 5px 15px -14px #000000;
+  box-shadow: 0px 5px 15px -14px #000000;
+}
+
+.Button--secondary:hover {
+  border-color: #baae00;
+}
+
+.Button--tertiary:hover {
+  border-color: $blue1;
+  background-color: $blueLight;
+}

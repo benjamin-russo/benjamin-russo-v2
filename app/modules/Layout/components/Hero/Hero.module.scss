@@ -1,0 +1,57 @@
+@import '/styles/variables.scss';
+
+.Hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  max-width: 600px;
+  margin-left: 130px;
+}
+
+.Hero-top {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.Hero-titleContainer {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.Hero-line {
+  width: 8px;
+  height: 35px;
+  border-radius: 4px;
+  background-color: $yellow;
+}
+
+.Hero-title {
+  font-size: 4.8rem;
+  font-weight: 600;
+  line-height: 100%;
+  color: $blue1;
+}
+
+.Hero-subtitle {
+  font-size: 2.4rem;
+  font-weight: 500;
+  line-height: 100%;
+  color: $blue2;
+}
+
+.Hero-excerpt {
+  margin-bottom: 20px;
+  font-size: 2rem;
+  font-weight: 400;
+  line-height: 1.2;
+  color: $black;
+}
+
+.Hero-bottom {
+  display: flex;
+  gap: 20px;
+}
