@@ -11,3 +11,14 @@ www.benjaminrusso.fr {
 benjaminrusso.fr {
     redir https://www.benjaminrusso.fr{uri}
 }
+
+# backoffice
+backoffice.benjaminrusso.fr {
+    header {
+        Strict-Transport-Security max-age=31536000;
+        X-Content-Type-Options "nosniff"
+        Cache-Control "public, max-age=604800, must-revalidate"
+    }
+    encode gzip
+    reverse_proxy localhost:4000
+}

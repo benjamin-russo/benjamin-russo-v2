@@ -7,7 +7,7 @@ interface LinkedinProps {
 }
 
 const Linkedin = (props: LinkedinProps) => {
-  const { color = IconColors.blue1, height = 24, width = 24 } = props;
+  const { color = IconColors.primary, height = 24, width = 24 } = props;
   return (
     <svg aria-label='linkedin' width={width} height={height} viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'>
       <path

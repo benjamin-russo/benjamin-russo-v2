@@ -30,7 +30,7 @@ const Button = (props: ButtonProps) => {
     );
 
   return (
-    <button className={styles['Button']} onClick={onClick}>
+    <button className={className} onClick={onClick}>
       {label}
     </button>
   );

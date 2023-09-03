@@ -8,34 +8,34 @@
   font-size: 1.6rem;
   font-weight: 600;
   text-decoration: none;
-  background-color: $blue1;
+  background-color: $primary;
   color: $white;
 }
 
 .Button--secondary {
-  border: 2px solid $yellow;
-  background-color: $yellow;
-  color: $black;
+  border: 2px solid $secondary;
+  background-color: $secondary;
+  color: $white;
 }
 
 .Button--tertiary {
-  border: 2px solid $blue1;
+  border: 2px solid $primary;
   background-color: $white;
-  color: $blue1;
+  color: $primary;
 }
 
 // modifiers
 .Button:hover {
-  border-color: $blue3;
+  background-color: $primaryLight;
   -webkit-box-shadow: 0px 5px 15px -14px #000000;
   box-shadow: 0px 5px 15px -14px #000000;
 }
 
 .Button--secondary:hover {
-  border-color: #baae00;
+  border-color: $secondaryLight;
+  background-color: $secondaryLight;
 }
 
 .Button--tertiary:hover {
-  border-color: $blue1;
-  background-color: $blueLight;
+  background-color: $tertiary;
 }

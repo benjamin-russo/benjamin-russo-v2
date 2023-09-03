@@ -18,12 +18,12 @@ const Footer = () => {
           <ul className={styles['Footer-ul']}>
             <li className={styles['Footer-li']}>
               <a aria-label='linkedin' href='/'>
-                <Linkedin color={IconColors.yellow} />
+                <Linkedin color={IconColors.secondary} />
               </a>
             </li>
             <li className={styles['Footer-li']}>
               <a aria-label='instagram' href='/'>
-                <Instagram color={IconColors.yellow} />
+                <Instagram color={IconColors.secondary} />
               </a>
             </li>
           </ul>

@@ -1,8 +1,7 @@
 export enum IconColors {
-  blue1 = '#002a80',
-  blue2 = '#0066CC',
+  primary = '#0073FF',
+  secondary = '#002A80',
   white = '#ffffff',
-  yellow = '#FFEE00',
 }
 
 export enum ButtonVariants {

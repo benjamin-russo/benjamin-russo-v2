@@ -1,0 +1,58 @@
+@import '/styles/variables.scss';
+@import '/styles/mq.scss';
+
+.TextWithPicture {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  background-color: $primary;
+  gap: 75px;
+  padding-right: 50px;
+
+  @include laptop {
+    align-items: center;
+    flex-direction: column;
+    gap: 40px;
+    padding: 20px 20px 40px 20px;
+  }
+}
+
+.TextWithPicture-left {
+  min-width: 500px;
+  min-height: 500px;
+  position: relative;
+
+  @include laptop {
+    width: 100%;
+    min-width: initial;
+  }
+
+  @include mobileL {
+    min-height: 300px;
+  }
+}
+
+.TextWithPicture-right {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding: 100px 0;
+
+  @include laptop {
+    padding: 0;
+  }
+}
+
+.TextWithPicture-title {
+  font-size: 3.6rem;
+  font-weight: 600;
+  line-height: 100%;
+  color: $secondary;
+}
+
+.TextWithPicture-text {
+  font-size: 2rem;
+  font-weight: 400;
+  line-height: 1.2;
+  color: $white;
+}

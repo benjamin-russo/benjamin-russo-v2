@@ -1,12 +1,26 @@
 @import '/styles/variables.scss';
+@import '/styles/mq.scss';
 
 .Hero {
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;
   width: 100%;
-  max-width: 600px;
+  min-height: 80vh;
+
+  @include tablet {
+    min-height: 100vh;
+  }
+}
+
+.Hero-container {
   margin-left: 130px;
+  max-width: 600px;
+
+  @include tablet {
+    margin: 0 20px;
+  }
 }
 
 .Hero-top {
@@ -14,6 +28,11 @@
   flex-direction: column;
   justify-content: center;
   margin-bottom: 20px;
+
+  @include tablet {
+    align-items: center;
+    gap: 5px;
+  }
 }
 
 .Hero-titleContainer {
@@ -26,21 +45,42 @@
   width: 8px;
   height: 35px;
   border-radius: 4px;
-  background-color: $yellow;
+  background-color: $primary;
+
+  @include tablet {
+    width: 5px;
+    height: 30px;
+  }
+
+  @include mobileL {
+    width: 5px;
+    height: 30px;
+  }
 }
 
 .Hero-title {
   font-size: 4.8rem;
   font-weight: 600;
   line-height: 100%;
-  color: $blue1;
+  text-align: center;
+  color: $secondary;
+
+  @include tablet {
+    font-size: 4.3rem;
+  }
+
+  @include mobileL {
+    font-size: 3.2rem;
+  }
 }
 
 .Hero-subtitle {
+  display: flex;
   font-size: 2.4rem;
   font-weight: 500;
   line-height: 100%;
-  color: $blue2;
+  text-align: center;
+  color: $primary;
 }
 
 .Hero-excerpt {
@@ -49,9 +89,19 @@
   font-weight: 400;
   line-height: 1.2;
   color: $black;
+
+  @include tablet {
+    max-width: 500px;
+    text-align: center;
+  }
 }
 
 .Hero-bottom {
   display: flex;
   gap: 20px;
+
+  @include tablet {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
 }

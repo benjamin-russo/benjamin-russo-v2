@@ -1,0 +1,27 @@
+@import '/styles/variables.scss';
+@import '/styles/mq.scss';
+
+.FAQ {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  border-radius: 8px;
+  padding: 75px 20px;
+}
+
+.FAQ-title {
+  font-size: 3.6rem;
+  font-weight: 600;
+  line-height: 100%;
+  text-align: center;
+  color: $secondary;
+}
+
+.FAQ-container {
+  display: flex;
+  justify-content: center;
+  max-width: 800px;
+  width: 100%;
+}
