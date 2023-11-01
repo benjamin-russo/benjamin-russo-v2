@@ -58,12 +58,22 @@ const Header = () => {
           {links}
           <div className={styles['Header-socials']}>
             <li className={styles['Header-li']}>
-              <a aria-label='linkedin' className={styles['Header-iconlink']} href='/'>
+              <a
+                aria-label='linkedin'
+                className={styles['Header-iconlink']}
+                href='https://www.linkedin.com/in/benjamin-russo-b1292a19a'
+                target='_blank'
+              >
                 <Linkedin color={scrollPosition ? IconColors.white : IconColors.primary} />
               </a>
             </li>
             <li className={styles['Header-li']}>
-              <a aria-label='instagram' className={styles['Header-iconlink']} href='/'>
+              <a
+                aria-label='instagram'
+                className={styles['Header-iconlink']}
+                href='https://www.instagram.com/russo_benjamin'
+                target='_blank'
+              >
                 <Instagram color={scrollPosition ? IconColors.white : IconColors.primary} />
               </a>
             </li>

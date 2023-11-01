@@ -1,7 +1,7 @@
 'use client';
 
 import * as AccordionRadix from '@radix-ui/react-accordion';
-import ArrowDown from '../../icons/ArrowUp';
+import ArrowDown from '../../icons/ArrowDown';
 
 import styles from './Accordion.module.scss';
 

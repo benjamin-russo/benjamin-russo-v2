@@ -1,0 +1,37 @@
+@import '/styles/variables.scss';
+@import '/styles/mq.scss';
+
+.ContactForm {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-bottom: 150px;
+
+  @include mobileL {
+    margin: 0 20px 150px 20px;
+    width: calc(100% - 40px);
+  }
+}
+
+.ContactForm-form {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 30px;
+  width: 100%;
+  max-width: 800px;
+}
+
+.ContactForm-container {
+  display: flex;
+  gap: 30px;
+  width: 100%;
+
+  @include mobileL {
+    flex-direction: column;
+  }
+}
+
+.ContactForm-button {
+  width: 100%;
+}

@@ -1,0 +1,37 @@
+@import '/styles/variables.scss';
+
+.Checkbox {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+}
+
+.Checkbox-field {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 30px;
+  width: 30px;
+  min-height: 30px;
+  height: 30px;
+  border-radius: 5px;
+  border: none;
+  background-color: $tertiary;
+  cursor: pointer;
+}
+
+.Checkbox-field[data-state='checked'] {
+  background-color: $primary;
+}
+
+.Checkbox-label {
+  font-size: 1.6rem;
+  font-weight: 400;
+  color: $secondary;
+  cursor: pointer;
+}
+
+.Checkbox-label span {
+  color: $primary;
+}

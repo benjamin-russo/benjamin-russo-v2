@@ -1,0 +1,46 @@
+@import '/styles/variables.scss';
+@import '/styles/mq.scss';
+
+.Toggle {
+  display: flex;
+  width: fit-content;
+  border: none;
+  border-radius: 5px;
+  background-color: $tertiary;
+
+  @include mobileL {
+    width: 100%;
+  }
+}
+
+.Toggle-button {
+  display: flex;
+  width: fit-content;
+  border: none;
+  border-radius: 5px;
+  padding: 12px 24px;
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: normal;
+  background-color: $tertiary;
+  color: $primary;
+  cursor: pointer;
+
+  @include mobileL {
+    width: 100%;
+    justify-content: center;
+  }
+}
+
+.Toggle-button:not([data-state='on']):hover {
+  margin: 4px;
+  border-radius: 2px;
+  padding: 8px 20px;
+  background-color: $white;
+}
+
+.Toggle-button[data-state='on'] {
+  border-radius: 5px;
+  background-color: $primary;
+  color: $white;
+}

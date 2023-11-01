@@ -1,6 +1,6 @@
 'use client';
 
-import ArrowDown from '@/modules/Common/icons/ArrowDown';
+import ArrowDown from '@/modules/Common/icons/ArrowUp';
 
 import styles from './DownButton.module.scss';
 

@@ -1,0 +1,10 @@
+@import '/styles/variables.scss';
+@import '/styles/mq.scss';
+
+.Main {
+  margin-top: 70px;
+
+  @include tablet {
+    margin-top: 80px;
+  }
+}

@@ -1,0 +1,14 @@
+@import '/styles/variables.scss';
+@import '/styles/mq.scss';
+
+.ToggleGroup {
+  display: flex;
+  background-color: $tertiary;
+  border-radius: 5px;
+  width: fit-content;
+
+  @include mobileL {
+    flex-direction: column;
+    width: 100%;
+  }
+}

@@ -1,0 +1,74 @@
+@import '/styles/variables.scss';
+@import '/styles/mq.scss';
+
+.Select {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  width: 100%;
+}
+
+.Select-label {
+  font-size: 1.6rem;
+  font-weight: 400;
+  color: $secondary;
+}
+
+.Select-label span {
+  color: $primary;
+}
+
+.SelectTrigger {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  width: 100%;
+  border: none;
+  border-radius: 5px;
+  padding: 9px 15px;
+  font-size: 1.6rem;
+  font-weight: 400;
+  color: $primary;
+  background-color: $tertiary;
+  cursor: pointer;
+}
+.SelectTrigger:hover {
+  background-color: $tertiary;
+}
+.SelectTrigger:focus {
+  box-shadow: 0 0 0 2px $secondary;
+}
+.SelectTrigger[data-placeholder] {
+  color: $primary;
+}
+
+.SelectIcon {
+  width: 24px;
+  height: 24px;
+}
+
+.SelectContent {
+  transition: none;
+  overflow: hidden;
+  background-color: $tertiary;
+  border-radius: 5px;
+  width: var(--radix-select-trigger-width);
+  max-height: var(--radix-select-content-available-height);
+}
+
+.SelectViewport {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  padding: 5px;
+}
+
+.SelectScrollButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 25px;
+  background-color: $tertiary;
+  cursor: default;
+}

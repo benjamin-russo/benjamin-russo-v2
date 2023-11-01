@@ -1,0 +1,40 @@
+@import '/styles/variables.scss';
+
+.DatePicker {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 5px;
+  width: 100%;
+}
+
+.DatePicker-label {
+  font-size: 1.6rem;
+  font-weight: 400;
+  color: $secondary;
+}
+
+.DatePicker-fields {
+  display: flex;
+  gap: 10px;
+  width: 100%;
+}
+
+.DatePicker-day,
+.DatePicker-month,
+.DatePicker-year {
+  width: 100%;
+  flex: 1;
+}
+
+.DatePicker-day {
+  max-width: 100px;
+}
+
+.DatePicker-month {
+  max-width: 150px;
+}
+
+.DatePicker-year {
+  max-width: 110px;
+}

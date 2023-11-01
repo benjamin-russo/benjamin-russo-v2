@@ -21,7 +21,7 @@ const RootLayout = ({ children }: { children: React.ReactNode }) => {
     <html lang='fr'>
       <body className={poppins.className}>
         <Header />
-        <main>
+        <main className={styles['Main']}>
           {children}
           <UpButton />
         </main>

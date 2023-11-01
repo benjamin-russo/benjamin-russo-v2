@@ -21,8 +21,8 @@ const Hero = () => {
           dictumst.
         </p>
         <div className={styles['Hero-bottom']}>
-          <Button href='/realisations' label='Voir mes réalisations' />
-          <Button href='/contact' label='Me contacter' variant={ButtonVariants.tertiary} />
+          {/* <Button href='/realisations' label='Voir mes réalisations' /> */}
+          <Button href='/contact' label='Me contacter' variant={ButtonVariants.primary} />
         </div>
         <DownButton />
       </div>

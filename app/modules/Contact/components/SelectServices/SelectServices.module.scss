@@ -1,0 +1,35 @@
+@import '/styles/variables.scss';
+@import '/styles/mq.scss';
+
+.SelectServices {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+
+  @include mobileL {
+    width: 100%;
+  }
+}
+
+.SelectServices-label {
+  font-size: 1.6rem;
+  font-weight: 400;
+  color: $secondary;
+}
+
+.SelectServices-services {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.SelectServices-container {
+  display: flex;
+  gap: 10px;
+  width: fit-content;
+
+  @include mobileL {
+    flex-direction: column;
+    width: 100%;
+  }
+}

@@ -1,0 +1,16 @@
+@import '/styles/variables.scss';
+
+.SelectItem {
+  border-radius: 2px;
+  padding: 10px 15px;
+  font-size: 1.6rem;
+  font-weight: 400;
+  cursor: pointer;
+}
+
+.SelectItem[data-highlighted],
+.SelectItem[data-state='checked'] {
+  outline: none;
+  background-color: $white;
+  color: $primary;
+}

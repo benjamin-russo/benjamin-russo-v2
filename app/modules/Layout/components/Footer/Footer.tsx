@@ -17,12 +17,12 @@ const Footer = () => {
           <p className={styles['Footer-text']}>Retrouvez moi sur</p>
           <ul className={styles['Footer-ul']}>
             <li className={styles['Footer-li']}>
-              <a aria-label='linkedin' href='/'>
+              <a aria-label='linkedin' href='https://www.linkedin.com/in/benjamin-russo-b1292a19a' target='_blank'>
                 <Linkedin color={IconColors.secondary} />
               </a>
             </li>
             <li className={styles['Footer-li']}>
-              <a aria-label='instagram' href='/'>
+              <a aria-label='instagram' href='https://www.instagram.com/russo_benjamin' target='_blank'>
                 <Instagram color={IconColors.secondary} />
               </a>
             </li>

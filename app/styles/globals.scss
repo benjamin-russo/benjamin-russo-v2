@@ -1,7 +1,18 @@
+@import '/styles/variables.scss';
+
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
 */
+
+// * {
+//   transition: 0.3s all ease;
+// }
+
+*:focus-visible {
+  outline: solid 2px $secondary;
+  transition: none;
+}
 
 html,
 body,
@@ -134,6 +145,7 @@ table {
   border-spacing: 0;
 }
 
-* {
-  transition: 0.3s all ease;
+html,
+body {
+  transition: none;
 }

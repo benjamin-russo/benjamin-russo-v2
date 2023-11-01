@@ -7,6 +7,7 @@ import { ButtonVariants } from '../../consts';
 import styles from './Button.module.scss';
 
 interface ButtonProps {
+  className?: string;
   href?: string;
   label: string;
   onClick?: () => void;
@@ -14,23 +15,24 @@ interface ButtonProps {
 }
 
 const Button = (props: ButtonProps) => {
-  const { href, label, onClick, variant } = props;
+  const { className = '', href, label, onClick, variant } = props;
 
-  const className = classNames({
+  const buttonClassName = classNames({
     [styles['Button']]: true,
+    [className]: className,
     [styles['Button--secondary']]: variant === ButtonVariants.secondary,
     [styles['Button--tertiary']]: variant === ButtonVariants.tertiary,
   });
 
   if (href)
     return (
-      <Link className={className} href={href}>
+      <Link className={buttonClassName} href={href}>
         {label}
       </Link>
     );
 
   return (
-    <button className={className} onClick={onClick}>
+    <button className={buttonClassName} onClick={onClick}>
       {label}
     </button>
   );

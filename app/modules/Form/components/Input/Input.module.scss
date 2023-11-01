@@ -1,0 +1,38 @@
+@import '/styles/variables.scss';
+
+.Input {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  width: 100%;
+}
+
+.Input-label {
+  font-size: 1.6rem;
+  font-weight: 400;
+  color: $secondary;
+}
+
+.Input-label span {
+  color: $primary;
+}
+
+.Input-field {
+  font-size: 1.6rem;
+  font-weight: 400;
+  border: none;
+  border-radius: 5px;
+  padding: 12px 15px;
+  color: $primary;
+  background-color: $tertiary;
+}
+
+.Input-field::placeholder {
+  font-size: 1.6rem;
+  font-weight: 400;
+  color: $primaryLight;
+}
+
+.Input-field:focus-visible {
+  outline: solid 2px $secondary;
+}
