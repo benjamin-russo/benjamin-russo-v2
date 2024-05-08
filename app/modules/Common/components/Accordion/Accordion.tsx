@@ -21,7 +21,7 @@ const Accordion = (props: AccordionProps) => {
   const itemsList = items.map((item) => {
     const { id, content, title } = item;
     return (
-      <AccordionRadix.Item className={styles['Accordion-item']} value={id.toString()}>
+      <AccordionRadix.Item key={id} className={styles['Accordion-item']} value={id.toString()}>
         <AccordionRadix.Trigger className={styles['Accordion-trigger']}>
           {title} <ArrowDown height={40} width={40} />
         </AccordionRadix.Trigger>

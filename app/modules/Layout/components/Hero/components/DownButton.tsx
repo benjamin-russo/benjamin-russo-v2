@@ -1,6 +1,8 @@
 'use client';
 
-import ArrowDown from '@/modules/Common/icons/ArrowUp';
+import ArrowDown from '@/modules/Common/icons/ArrowDown';
+
+import { IconColors } from '@/modules/Common/consts';
 
 import styles from './DownButton.module.scss';
 
@@ -15,7 +17,7 @@ const DownButton = () => {
   return (
     <div className={styles['DownButton']}>
       <button className={styles['DownButton-button']} onClick={handleGoTo}>
-        <ArrowDown />
+        <ArrowDown color={IconColors.white} />
       </button>
     </div>
   );

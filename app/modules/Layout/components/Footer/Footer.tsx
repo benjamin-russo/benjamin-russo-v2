@@ -8,7 +8,7 @@ import { IconColors } from '@/modules/Common/consts';
 
 const Footer = () => {
   return (
-    <footer className={styles['Footer']}>
+    <footer className={styles['Footer']} role='contentinfo'>
       <div className={styles['Footer-top']}>
         <Link aria-label='accueil' className={styles['Footer-iconlink']} href='/'>
           <Logo color={IconColors.white} height={70} width={70} />
